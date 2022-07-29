@@ -1,0 +1,42 @@
+.hobbySection
+  background-color: #fefefe
+  padding: 110px 0 80px 0
+  .imgBox
+    height: 350px
+    position: relative
+    overflow: hidden
+    border-radius: 12px
+    &:hover .img
+      transform: scale(1.1)
+    .img 
+      width: 100%
+      height: 100%
+      transition: .4s
+      background-repeat: no-repeat
+      background-size: cover
+      &.poolImg 
+        // background-image: url("../../static/Pool.jpg")
+        background-image: url("../../static/Dumbbel.jpg")
+      &.dumbbelImg 
+        background-image: url("../../static/Dumbbel.jpg")
+      &.gamingImg 
+        background-image: url("../../static/Gaming.jpg")
+      &.animeImg 
+        background-image: url("../../static/Anime.png")
+    .overlay
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      border-radius: 12px
+      background-color:  rgba(255, 133, 83, 0.3)
+      transition: .4s
+      opacity: 0
+      &:hover
+        opacity: 1
+      .overlayText
+        color: white
+        font-size: 32px
+        position: absolute
+        bottom: 40px
+        left: 40px
